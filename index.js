@@ -37,8 +37,6 @@ Branches  : ${json.total.branches.pct}%   ( ${json.total.branches.covered}  /${j
 Functions : ${json.total.functions.pct}%  ( ${json.total.functions.covered} /${json.total.functions.total} )
 Lines     : ${json.total.lines.pct}%      ( ${json.total.lines.covered}     /${json.total.lines.total} )`;
 
-    console.log("here is the coverage variable", coverage);
-
     await octokit.issues.createComment({
       owner,
       repo,
